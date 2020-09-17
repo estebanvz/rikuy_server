@@ -38,7 +38,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Natureza',
             'score' => 1,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 3
         ]);
         DB::table('questions')->insert([
             'id' => 12,
@@ -47,7 +47,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Universo',
             'score' => 3,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 3
         ]);
         DB::table('questions')->insert([
             'id' => 13,
@@ -56,7 +56,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'O desejo dela é mesclar-se com a natureza',
             'score' => 4,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 3
         ]);
         DB::table('questions')->insert([
             'id' => 14,
@@ -65,7 +65,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Pinceladas retorcidas e curvas',
             'score' => 2,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 3
         ]);
 
         DB::table('questions')->insert([
@@ -75,7 +75,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Árvores',
             'score' => 3,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 3
         ]);
         DB::table('readings')->insert([
             'id' => 4,
@@ -135,7 +135,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Comida',
             'score' => 3,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 4
         ]);
         DB::table('questions')->insert([
             'id' => 17,
@@ -144,7 +144,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Universo',
             'score' => 2,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 4
         ]);
         DB::table('questions')->insert([
             'id' => 18,
@@ -153,7 +153,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'O desejo dela é mesclar-se com a natureza',
             'score' => 4,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 4
         ]);
         DB::table('questions')->insert([
             'id' => 19,
@@ -162,7 +162,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Sim',
             'score' => 1,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 4
         ]);
 
         DB::table('questions')->insert([
@@ -172,7 +172,7 @@ class Stories2Seeder extends Seeder
             'answer' => 'Comida, por favor"',
             'score' => 3,
             'type' => 1,
-            'reading_id' => 1
+            'reading_id' => 4
         ]);
     }
 }

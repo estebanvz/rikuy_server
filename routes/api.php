@@ -22,6 +22,7 @@ Route::resource('questionexams', 'QuestionExamController');
 Route::get('test', 'TestController@create');
 Route::get('data', 'DataController@speedComprehension');
 
+Route::put('abstract/{id}', 'ExamController@setAbstract');
 
 Route::group(['middleware' => ['auth:api']], function () {
     Route::post('test', 'TestController@create');

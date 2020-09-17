@@ -33,7 +33,7 @@ class TestController extends Controller
             $exam['score'] = 0;
             $exam->save();
 
-            $questions = Question::where("reading_id", '=', $input['id'])->get();
+            $questions = Question::where("reading_id", '=', $input['id'])->inRandomOrder()->take(4)->get();
             $question_exams = [];
             $total = 0;
             for ($i = 0; $i < count($questions); $i++) {

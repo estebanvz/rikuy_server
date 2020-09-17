@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Exam;
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 class ExamController extends Controller
 {
     /**
@@ -17,6 +17,14 @@ class ExamController extends Controller
         //
         $exams= Exam::where('user_id',Auth::user()->id)->get();
         return response()->json($exams);
+    }
+    public function setAbstract(Request $request, $id){
+        $exam = Exam::find($id);
+        $exam->abstract = $request->all()['abstract'];
+        $time = Carbon::parse($exam->initial_date)->diffInSeconds(Carbon::now());
+        $exam->time=$time;
+        $exam->save();
+        return response()->json($exam);
     }
 
     /**
